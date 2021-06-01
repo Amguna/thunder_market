@@ -6,9 +6,6 @@ import {
   Link
 } from 'react-router-dom';
 
-//view page
-import MainScreen from '../view/main';
-
 
 
 // Route 아래에 path, component 등록해서 사용
@@ -17,9 +14,9 @@ export default function BaseRouter() {
   return (
     <Router>
       <Switch>
-        <Route
+        {/* <Route
           path="/" component={MainScreen}
-        />
+        /> */}
       </Switch>
     </Router>
   )
