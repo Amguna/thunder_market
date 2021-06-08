@@ -9,14 +9,14 @@ import {
 
 
 // Route 아래에 path, component 등록해서 사용
-import MainBodyComponent from '../component/main/body'
+import MainNavComponent from '../component/main/nav'
 
-export default function BodyRouter() {
+export default function NavRouter() {
   return (
     <Router>
       <Switch>
         <Route
-          path="/" component={MainBodyComponent}
+          path="/" component={MainNavComponent}
         />
       </Switch>
     </Router>
