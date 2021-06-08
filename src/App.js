@@ -1,40 +1,21 @@
-import Router from './route/BodyRouter'
-
-import {
-  Header,
-  Nav,
-  NavRightBar,
-  Body,
-  Footer,
-} from './styles';
-
-//components
-import HeaderComponent from './component/main/header'
+import BodyRouter from './route/BodyRouter'
+import HeaderRouter from './route/HeaderRouter'
+import NavRouter from './route/NavRouter'
+import FooterRouter from './route/FooterRouter'
 
 function App() {
   return (
     <div>
-      <Header>
-        <HeaderComponent />
-      </Header>
+      <HeaderRouter />
 
 
-      <Nav>
-        <div>
-          navigator
-        </div>
-        <NavRightBar />
-      </Nav>
+      <NavRouter />
 
 
-      <Body>
-        <Router />
-      </Body>
+      <BodyRouter />
 
 
-      <Footer>
-        footer
-      </Footer>
+      <FooterRouter />
     </div>
   );
 }

@@ -4,11 +4,12 @@ import Favorite from './favorite/index';
 import LoginSignup from './loginSignup/index';
 import MyStore from './myStore/index';
 
-//components
+//styles
+import { Header } from './styles';
 
 export default function Component() {
   return (
-    <div style={styles.container} >
+    <Header>
       <div style={styles.block}>
         <AppDownload />
         <Favorite />
@@ -17,7 +18,7 @@ export default function Component() {
         <LoginSignup />
         <MyStore />
       </div>
-    </div>
+    </Header>
   )
 }
 

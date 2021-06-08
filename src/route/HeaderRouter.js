@@ -9,14 +9,14 @@ import {
 
 
 // Route 아래에 path, component 등록해서 사용
-import MainBodyComponent from '../component/main/body'
+import HeaderComponent from '../component/main/header';
 
-export default function BodyRouter() {
+export default function HeaderRouter() {
   return (
     <Router>
       <Switch>
         <Route
-          path="/" component={MainBodyComponent}
+          path="/" component={HeaderComponent}
         />
       </Switch>
     </Router>
