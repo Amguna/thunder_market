@@ -3,20 +3,33 @@ import HeaderRouter from './route/HeaderRouter'
 import NavRouter from './route/NavRouter'
 import FooterRouter from './route/FooterRouter'
 
+//styles
+import { Container, HeaderContainer, BodyContainer, FooterContainer, NavContainer } from './styles';
+
 function App() {
   return (
-    <div>
-      <HeaderRouter />
+    <Container>
+      <HeaderContainer>
+        <HeaderRouter />
+      </HeaderContainer>
+      
 
 
-      <NavRouter />
+      <NavContainer>
+        <NavRouter />
+      </NavContainer>
+
+      <BodyContainer>
+        <BodyRouter />
+      </BodyContainer>
+      
 
 
-      <BodyRouter />
-
-
-      <FooterRouter />
-    </div>
+      <FooterContainer>
+        <FooterRouter />
+      </FooterContainer>
+      
+    </Container>
   );
 }
 
