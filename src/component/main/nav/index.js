@@ -1,13 +1,16 @@
 import React from 'react'
 
 //styles
-import { Nav, NavRightBar } from './styles';
+import { Nav } from './styles';
+
+//components
+import NavRightBar from './NavRightBar';
 
 export default function Component() {
   return (
     <Nav>
       <div>
-        navigator
+        search, categories, etc..
       </div>
       <NavRightBar />
     </Nav>
